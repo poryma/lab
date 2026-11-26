@@ -212,3 +212,66 @@ footer.site .care strong { color: #fff; }
   section { padding: 48px 0; }
   table.uses th, table.uses td { display: block; width: 100%; border-right: none !important; }
 }
+
+/* ---------- multi-page additions (Nov 2026) ---------- */
+.page-head { padding: 56px 0 36px; border-bottom: 1px solid var(--rule); }
+.page-head .kicker { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; color: var(--crimson); font-weight: 600; margin-bottom: 10px; }
+.page-head p.lede { font-family: "Source Serif 4", Georgia, serif; font-size: 1.2rem; color: var(--ink-soft); max-width: 44rem; margin: 0; }
+nav a.active { color: var(--accent); font-weight: 600; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: #fff; border: 1px solid var(--rule); padding: 22px 22px 18px; display: flex; flex-direction: column; text-decoration: none; color: var(--ink); transition: border-color .15s, transform .15s; }
+a.card:hover { border-color: var(--accent); transform: translateY(-2px); color: var(--ink); }
+.card h3 { margin-bottom: .5rem; }
+.card p { margin: 0 0 .8rem; color: var(--ink-soft); font-size: .95rem; }
+.card .more { margin-top: auto; font-size: .88rem; color: var(--accent); font-weight: 500; }
+.card .label { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: var(--crimson); font-weight: 600; margin-bottom: 6px; }
+
+.highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 2px solid var(--ink); }
+.highlights div { padding: 18px 20px 18px 0; border-bottom: 1px solid var(--rule); }
+.highlights .big { font-family: "Source Serif 4", Georgia, serif; font-size: 1.15rem; font-weight: 600; display: block; margin-bottom: 4px; }
+.highlights span { color: var(--ink-soft); font-size: .92rem; }
+
+details.course { background: #fff; border: 1px solid var(--rule); margin-bottom: 12px; }
+details.course > summary { list-style: none; cursor: pointer; padding: 18px 22px; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: center; }
+details.course > summary::-webkit-details-marker { display: none; }
+details.course > summary .t { font-family: "Source Serif 4", Georgia, serif; font-size: 1.12rem; font-weight: 600; }
+details.course > summary .m { grid-column: 1; font-size: .85rem; color: var(--ink-soft); }
+details.course > summary .chev { grid-row: 1 / span 2; grid-column: 2; font-size: 1.3rem; color: var(--accent); transition: transform .2s; }
+details.course[open] > summary .chev { transform: rotate(45deg); }
+details.course > summary:hover .t { color: var(--accent); }
+details.course .body { padding: 0 22px 20px; border-top: 1px dashed var(--rule); }
+details.course .body p { margin: 14px 0 10px; }
+details.course .body h4 { font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--crimson); margin: 16px 0 6px; }
+details.course ul.flow, details.course ul.acts { margin: 0; padding-left: 1.2rem; font-size: .95rem; }
+details.course ul.flow li, details.course ul.acts li { margin-bottom: 4px; }
+.badge { display: inline-block; font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; padding: 2px 8px; margin-left: 6px; vertical-align: 2px; border: 1px solid var(--rule); background: var(--paper-deep); color: var(--ink-soft); font-family: "Inter", sans-serif; font-weight: 600; }
+.badge.award { background: var(--crimson); color: #fff; border-color: var(--crimson); }
+.badge.new { background: var(--accent); color: #fff; border-color: var(--accent); }
+.term { font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-soft); font-weight: 600; margin: 34px 0 12px; }
+
+figure.ill { margin: 0; }
+figure.ill img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
+figure.ill figcaption { font-size: .8rem; color: var(--ink-soft); margin-top: 6px; }
+.principle-row { display: grid; grid-template-columns: 220px 1fr; gap: 28px; align-items: start; padding: 26px 0; border-bottom: 1px solid var(--rule); }
+.principle-row img { width: 220px; height: 220px; object-fit: cover; border: 1px solid var(--rule); }
+.principle-row .n { font-family: "Source Serif 4", Georgia, serif; color: var(--accent); font-size: 1rem; font-weight: 600; letter-spacing: .05em; }
+.principle-row p { margin: .3rem 0 0; color: var(--ink-soft); }
+.split { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
+
+.project { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+.project h3 { margin-bottom: .3rem; }
+.project p { margin: 0 0 .4rem; color: var(--ink-soft); }
+.project .out { font-size: .88rem; }
+.project .status { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--crimson); font-weight: 600; }
+
+.contact-card { background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--accent); padding: 26px; }
+.contact-card .email { font-family: "Source Serif 4", Georgia, serif; font-size: 1.35rem; }
+a.button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 18px; font-weight: 600; font-size: .92rem; margin-top: 12px; }
+a.button:hover { background: var(--crimson); color: #fff; }
+ol.steps { padding-left: 1.2rem; } ol.steps li { margin-bottom: .6rem; }
+
+@media (max-width: 720px) {
+  .principle-row, .split { grid-template-columns: 1fr; }
+  .principle-row img { width: 100%; height: auto; }
+}
