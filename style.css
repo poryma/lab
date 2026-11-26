@@ -90,6 +90,24 @@ nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
   margin: 0;
 }
 .hero .meta { margin-top: 22px; font-size: .95rem; color: var(--ink-soft); }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 48px;
+  align-items: center;
+}
+.portrait {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  object-position: 50% 15%;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+@media (max-width: 720px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+  .portrait { order: -1; width: 160px; height: 200px; }
+}
 
 /* ---------- sections ---------- */
 section { padding: 64px 0; border-bottom: 1px solid var(--rule); }
