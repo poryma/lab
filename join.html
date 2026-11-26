@@ -57,7 +57,9 @@
       <div class="contact-card">
         <div class="label" style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--crimson);font-weight:600">Contact</div>
         <div class="email"><a href="mailto:poryma@korea.ac.kr">poryma@korea.ac.kr</a></div>
-        <a class="button" href="mailto:poryma@korea.ac.kr?subject=%5BLab%5D%20Your%20name%20-%20program%20-%20topic">Write an email →</a>
+        <a class="button" id="mailbtn" href="mailto:poryma@korea.ac.kr?subject=%5BLab%5D%20Your%20name%20-%20program%20-%20topic">Write an email →</a>
+        <p id="mailnote" style="font-size:.85rem;color:var(--ink-soft);margin:.6rem 0 0">Nothing opened? The address is copied when you click. Paste it into your mail app, or <a href="https://mail.google.com/mail/?view=cm&amp;to=poryma@korea.ac.kr&amp;su=%5BLab%5D%20Your%20name%20-%20program%20-%20topic" target="_blank" rel="noopener">write in Gmail</a>.</p>
+        <script>document.getElementById("mailbtn").addEventListener("click",function(){if(navigator.clipboard){navigator.clipboard.writeText("poryma@korea.ac.kr").then(function(){var n=document.getElementById("mailnote");n.firstChild.textContent="Address copied: poryma@korea.ac.kr. If no mail app opened, paste it into your mail app, or ";}).catch(function(){});}});</script>
         <p style="margin-top:1.4rem;font-size:.92rem;color:var(--ink-soft)"><strong style="color:var(--ink)">Jaein Lee, Ph.D.</strong><br>Department of Public Sociology (undergraduate)<br>Department of Social Welfare (graduate)<br>Korea University Sejong Campus<br>2511 Sejong-ro, Sejong, Republic of Korea</p>
         <p style="font-size:.92rem;color:var(--ink-soft)">Email is the best way to reach me. Korean or English is fine.</p>
         <p style="font-size:.92rem"><a href="https://poryma.github.io/">Personal homepage</a> · <a href="https://poryma.github.io/Jaein_Lee_CV.pdf">CV (PDF)</a></p>
