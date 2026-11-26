@@ -205,6 +205,10 @@ footer.site .care {
   margin-bottom: 26px;
 }
 footer.site .care strong { color: #fff; }
+footer.site .ku-row { display: flex; gap: 18px; align-items: center; }
+footer.site .ku-row p { margin: 0; }
+footer.site .ku-mark { flex: none; line-height: 0; opacity: .92; }
+footer.site .ku-mark:hover { opacity: 1; }
 
 @media (max-width: 640px) {
   nav a { margin: 0 14px 0 0; }
