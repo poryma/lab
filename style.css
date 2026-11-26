@@ -89,6 +89,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
   max-width: 44rem;
   margin: 0;
 }
+.hero .ku-sig { display: inline-block; line-height: 0; margin-bottom: 18px; }
 .hero .meta { margin-top: 22px; font-size: .95rem; color: var(--ink-soft); }
 .hero-grid {
   display: grid;
